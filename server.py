@@ -139,7 +139,7 @@ def get_coordinates(location):
     return f"{location.latitude},{location.longitude}" if location else None
 
 def get_nearby_hospitals(location_str):
-    GOOGLE_MAPS_API_KEY = "AIzaSyCLCReLzKVF6W6MvJw6WwwcMtZj5in25TA"
+    GOOGLE_MAPS_API_KEY = "API_KEY"
     GOOGLE_MAPS_API_ENDPOINT = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
 
     location = get_coordinates(location_str)
