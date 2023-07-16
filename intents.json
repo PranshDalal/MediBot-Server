@@ -1,0 +1,65 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hello", "Hi", "Hey", "Good morning", "Good afternoon"],
+        "responses": ["Hello! How can I assist you today?", "Hi there! How may I help you?", "Hey! What can I do for you?"]
+      },
+      {
+        "tag": "name",
+        "patterns": ["Hi, what is your name", "What is your name", "Who are you"],
+        "responses": ["My name is MediBot", "I am MediBot, your personal healthcare assistant", "I am MediBot"]
+      },
+      {
+        "tag": "farewell",
+        "patterns": ["Bye", "Goodbye", "See you later", "Take care"],
+        "responses": ["Goodbye! If you have any more questions, feel free to ask.", "Take care! Have a great day!"]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thank you", "Thanks", "Appreciate it"],
+        "responses": ["You're welcome!", "No problem! If you need further assistance, just let me know."]
+      },
+      {
+        "tag": "ask_for_symptoms - cancer",
+        "patterns": ["What are the symptoms of cancer?", "Tell me about the symptoms of cancer"],
+        "responses": ["The common symptoms of cancer include unexplained weight loss, persistent fatigue, lumps or thickening in the breast, testicle, or elsewhere, changes in the skin, such as darkening or yellowing, persistent cough or hoarseness, difficulty swallowing or persistent indigestion, persistent changes in bowel or bladder habits, chronic pain that doesn't improve with treatment, unexplained bleeding or bruising, and frequent infections."]
+      },
+      {
+        "tag": "ask_for_treatment - cancer",
+        "patterns": ["How is cancer treated?", "What are the treatment options for cancer?", "Is there a cure for cancer?"],
+        "responses": ["The treatment for cancer typically involves surgery, radiation therapy, chemotherapy, immunotherapy, targeted therapy, or a combination of these approaches. However, it's essential to consult a healthcare professional for personalized advice."]
+      },
+      {
+        "tag": "ask_for_prevention - cancer",
+        "patterns": ["How can I prevent cancer?", "What are the prevention measures for cancer?"],
+        "responses": ["To reduce the risk of cancer, you can adopt a healthy lifestyle by avoiding tobacco and excessive alcohol consumption, maintaining a balanced diet, engaging in regular physical activity, protecting yourself from the sun, and getting vaccinated against cancer-causing infections like HPV and Hepatitis B. For more tailored guidance, consult a healthcare provider."]
+      },
+      {
+        "tag": "ask_for_diagnosis - cancer",
+        "patterns": ["How is cancer diagnosed?", "What are the diagnostic procedures for cancer?", "How do I know if I have cancer?"],
+        "responses": ["Diagnosing cancer involves various methods, including physical examinations, imaging tests like X-rays and MRI, biopsies to examine tissue samples, blood tests, and genetic testing. If you suspect you have cancer or experience concerning symptoms, seek medical evaluation for a definitive diagnosis."]
+      },
+      {
+        "tag": "emergency",
+        "patterns": ["I need urgent help", "This is an emergency", "Call for help"],
+        "responses": ["I'm really sorry to hear that you're experiencing an emergency. Please call emergency services immediately at your location."]
+      },
+      {
+        "tag": "nearest_hospitals",
+        "patterns": ["Where is the nearest hospital?", "Find hospitals near me", "What hospital is closest to me?"],
+        "responses": [
+            "The nearest hospitals are: {hospitals}",
+            "I found some hospitals nearby: {hospitals}",
+            "Here are the closest hospitals: {hospitals}",
+            "You can visit these hospitals: {hospitals}"
+          ]
+      },
+      {
+        "tag": "fallback",
+        "patterns": [],
+        "responses": ["I'm sorry, but I'm not sure I understand. Could you please rephrase your question?", "Apologies, but I couldn't grasp that. Can you try asking in a different way?"]
+      }
+    ]
+  }
+  
